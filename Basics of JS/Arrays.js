@@ -4,7 +4,7 @@ let student = ["Rhea" , 1 , 98 , "JK Road"];  //Arrays can store values of diffe
 
 //Array methods ->
 
-// Push() -> Adds element or value to the end of array . Return array size until and unless changed array is stored in another array variable . Adds a string not individual values as given in the example . If you want to add seprate values , you need to call push() again and again .
+// Push() -> Adds element or value to the end of array . Returns array size until and unless changed array is stored in another array variable . Adds a string not individual values as given in the example . If you want to add seprate values , you need to call push() again and again .
 
 let newNames = [];
 
