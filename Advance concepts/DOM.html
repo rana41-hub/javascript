@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+</head>
+<body class = "body">
+  <uL class = "different-languages">Languages
+  </uL>
+
+  <script>
+
+    document.body.style.backgroundColor = "black";
+    document.body.style.color = "white";
+
+  function language (lang) {
+
+    const lang_name = document.createElement("li");
+    lang_name.innerHTML = `${lang}`;
+    document.querySelector(".different-languages").appendChild(lang_name);
+  }
+
+  language("python");
+  language("Javascript");
+  language("java");
+</script>
+
+</body>
+
+</html>
