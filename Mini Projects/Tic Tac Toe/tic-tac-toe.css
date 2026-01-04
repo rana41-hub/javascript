@@ -1,0 +1,48 @@
+#mainbox {
+
+  border: 1px solid rgb(95, 93, 93);
+  border-radius: 5px;
+  width: 480px;
+  height : 480px;
+  margin-top: 60px;
+  margin-left: 570px;
+  display: grid;
+  grid-template-columns: repeat(3 , 1fr);
+  place-items: center;
+  background-color: bisque;
+
+}
+
+.insidebox {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 127px;
+  width: 127px;
+
+  font-size: 100px;
+  line-height: 1; 
+
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: 13px;
+
+}
+
+  #reset {
+  grid-column: span 3;     
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  border-radius: 8px;
+  border: none;
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+}
+
+#reset:hover {
+  background-color: darkred;
+}
