@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Json</title>
+</head>
+<body>
+
+  <script>
+
+    //JSON --> Javascript Object Notation
+
+    let product = {
+
+      name : 'T-shirt',
+      price : 899,
+      ratings : {
+
+        people : 500,
+        good : 400,
+        bad : 100,
+      },
+    };
+
+    let str = JSON.stringify(product); //Used to convert object into JSON 
+
+    console.log(str);
+
+    let newProduct = JSON.parse(str);  //Used to convert JSON back to object
+
+    console.log(newProduct)
+
+  </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 .bat {
 
-  margin-left: 43%;
+  margin-left: 25%;
   margin-top: 10%;
 }
 
@@ -17,4 +17,10 @@
 .heading {
 
   text-align: center;
+}
+
+.cricket {
+
+  display: flex;
+  justify-content: center;
 }

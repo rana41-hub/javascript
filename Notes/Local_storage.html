@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <title>Json</title>
+</head>
+<body>
+
+  <script>
+
+  
+
+    let product = {
+
+      name : 'T-shirt',
+      price : 899,
+      ratings : {
+
+        people : 500,
+        good : 400,
+        bad : 100,
+      },
+    };
+
+    localStorage.setItem('product' , JSON.stringify(product));
+
+    let product2 = JSON.parse(localStorage.getItem('product'));
+    console.log(product2);
+
+    localStorage.removeItem('name');  //Used to remove a Key value pair from object in a local storage
+    localStorage.clear();  //Used to clear local storage completely
+
+
+  </script>
+</body>
+</html>

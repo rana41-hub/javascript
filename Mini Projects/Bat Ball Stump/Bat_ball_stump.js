@@ -29,14 +29,14 @@ function computer_player (){
 
 function alert_message () {
 
-  alert(`Your choice is ${user_choice} , ${computer_choiceMsg} , ${result_msg} , 
+  document.querySelector('.result').innerText = `Your choice is ${user_choice} , ${computer_choiceMsg} , ${result_msg} , 
     
     Score is 
     
     won : ${score.won}
     lose : ${score.lost}
-    tie : ${score.tie}`);
-}
+    tie : ${score.tie}`
+};
 
 function user_bat() {
 
