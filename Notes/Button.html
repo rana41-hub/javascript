@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button</title>
+  <style>
+
+    body {
+      background-color: burlywood;
+    }
+
+    .odd {
+
+      background-color:brown;
+    }
+
+    .even {
+
+      background-color: cadetblue;
+    }
+
+    #Button {
+
+      margin-left: 50%;
+      margin-top: 20%;
+      border: none;
+      border-radius: 5px;
+      height: 100px;
+      width: 100px;
+      font-size: 25px;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <button id = "Button" onclick="button_click();">0</button>
+
+  <script>
+  
+  let noOfCount = localStorage.getItem('noOfCount' || 0);
+  function button_click (){
+   
+    noOfCount++;
+    document.querySelector('#Button').innerText = localStorage.setItem('noOfCount' , noOfCount);
+    button_color();
+  };
+  
+  document.querySelector('#Button').innerText = noOfCount;
+  button_color();
+
+  function button_color() {
+
+   if(noOfCount % 2 == 0){
+
+    document.querySelector('#Button').classList.add('even');
+    document.querySelector('#Button').classList.remove('odd');
+   }
+   
+   else {
+
+    document.querySelector('#Button').classList.add('odd');
+    document.querySelector('#Button').classList.remove('even');
+ 
+   }
+
+   localStorage.setItem('countNumber',noOfCount);
+   document.querySelector('#Button').innerText = localStorage.getItem('noOfCount');
+
+  };
+  </script>
+</body>
+</html>
