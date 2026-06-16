@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+ 
+  <title>Advanced functions</title>
+</head>
+<body>
+  <script>
+    let sum = function(num1,num2) {
+
+    return num1 + num2;
+};
+
+    let sumThreeNumbers = function(num1,num2,num3,sumTwoNumbers){
+
+      let sum1 = sumTwoNumbers(num1,num2);
+      return sumTwoNumbers(sum1,num3);
+};
+
+  console.log(sumThreeNumbers(5,4,9,sum));
+
+  //Arrow Functions
+
+  let sum2 = (num1 , num2) => {
+    return num1 + num2;
+  }
+
+  //If Single argument ->
+
+  let square = num => num*num;
+
+  </script>
+</body>
+</html>

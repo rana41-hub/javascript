@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Set Timeout and Set Interval Function</title>
+</head>
+<body>
+  
+
+  <script>
+    
+    let alarm = function() {
+      console.log("Subah hogyi uth jao");
+    };
+    
+    //setTimeout() is used to execute a task after a particular Interval.
+
+    let timerId2 = setTimeout(alarm,5000);   //Function is passed with the time duration in miliseconds.
+    clearTimeout(timerId2);                 
+
+    let timerId = setTimeout(() => console.log('Wake up , it is morning') , 1000);  //Direct function definition can also be passed.
+
+    //setTimeout() always returns a timer ID.
+    //clearTimeout(timerId) is used to cancel the setTimeout execution. It makes use of TimerId
+
+
+    //setInterval() is used to execute task repeatedly after particular time interval.
+
+    let timerId3 = setInterval(alarm , 1000);
+    clearInterval(timerId3);
+  </script>
+</body>
+</html>
